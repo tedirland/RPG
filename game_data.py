@@ -13,7 +13,8 @@ the_hero = {
 
 goblin = {
     "name": "Hill Goblin",
-    "features": "slimy nose",
+    "intro": "You see a shape rustling in the bushes",
+    "adjective": "slimy",
     "attack_power": 3,
     "defense": 0,
     "weapon": "rusty dagger",
@@ -24,10 +25,24 @@ goblin = {
         "name": "Berzerk",
         "effect": "attack_up",
         "effect_impact": 5 }}
+fellwolf = {
+    "name": "Fellwolf",
+    "intro": "You hear a piercing howl and turn to face your foe",
+    "adjective": "snarling",
+    "attack_power": 4,
+    "defense": 1,
+    "weapon": "fangs",
+    "hp": 8,
+    "xp_drop": 2, #This is how much xp the bad guy gives when defeated
+    "gold_drop": 1,
+    "power": {
+        "name": "Call For Help",
+        "effect": "hp_up",
+        "effect_impact": 10 }}
 
 # Create a list to store enemies
-enemies = []
-enemies.append(goblin)
+enemies = [goblin,fellwolf]
+
 
 main_options = [
    { "text": "Jobs around the village",
