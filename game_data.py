@@ -5,7 +5,8 @@ the_hero = {
     "gold": 5, #amount of money the player has to buy things
     "attack_power": 5,
     "defense": 2,
-    "hp": 10,
+    "hp": 10, #this hp mutates as the player is hurt or heals
+    "max_hp": 10, #this is for refernce and will only change when a player levels up
     "weapon": "dull broadsword",
     "inventory": ["health_potion"]
 
@@ -45,12 +46,8 @@ enemies = [goblin,fellwolf]
 
 
 main_options = [
-   { "text": "Jobs around the village",
-    "input_key": "1"},
-   { "text": "Browse the Innkeep's wares",
-    "input_key": "2"},
-   { "text": "Do a dance",
-    "input_key": "3"},
-   { "text": "Leave the inn (exit)",
-    "input_key": "4"},
+   { "text": "I'm in need of coin. Do you know of any odd jobs around town?", "input_key": "1"},
+   { "text": "I'd take a look at your wares. Innkeep", "input_key": "2"},
+   { "text": "I'm in new in town - what's interesting to do in these parts?", "input_key": "3"},
+   { "text": "Leave the inn (exit)", "input_key": "4"},
 ]
