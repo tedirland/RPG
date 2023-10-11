@@ -1,8 +1,10 @@
 import random
 from colorama import Fore, Back, Style
-import game_data
-enemies = game_data.enemies
-the_hero = game_data.the_hero
+from game_data import enemies, the_hero
+from quests import quests
+
+enemies = enemies
+the_hero = the_hero
 
 def battle_engine():
     random_index = random.randint(0,len(enemies)-1)
